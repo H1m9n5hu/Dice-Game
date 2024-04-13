@@ -1,0 +1,34 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(25, 24, 32);
+    text-align: center;
+}
+
+h1 {
+    font-size: 10rem;
+    color: aquamarine;
+}
+
+h2 {
+    font-size: 3rem;
+    color: aquamarine;
+}
+
+h3 {
+    font-size: 2.2rem;
+    color: white;
+}
+
+footer {
+    margin-top: 11rem;
+}
+
+.container {
+    display: flex;
+    margin: 0 38%;
+}
+
+.subCon1 {
+    margin-right: 7rem;
+}

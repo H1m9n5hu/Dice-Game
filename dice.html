@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 class="title">Refresh Me</h1>
+        <div class="container">
+            <div class="subCon1">
+                <h2>Player 1</h2>
+                <img class="img1" src="./images/dice6.png" alt="six on Dice">
+            </div>
+            <div class="subCon2">
+                <h2>Player 2</h2>
+                <img class="img2" src="./images/dice6.png" alt="Six on Dice">
+            </div>
+        </div>
+    </div>    
+    
+    <footer>
+        <h3>Developed by Himanshu</h3>
+    </footer>
+
+    <script>
+        var randomNumber1 = Math.floor((Math.random() * 6) + 1);
+        var randomNumber2 = Math.floor((Math.random() * 6) + 1);
+
+        var randomImage1 = "./images/dice" + randomNumber1 + ".png";
+        var randomImage2 = "./images/dice" + randomNumber2 + ".png";
+
+        document.querySelector('.img1').setAttribute('src', randomImage1);
+        document.querySelector('.img2').setAttribute('src', randomImage2);
+
+        if(randomNumber1 > randomNumber2) {
+            document.querySelector('.title').innerHTML = "Player 1 Wins!";
+        } else if(randomNumber1 < randomNumber2) {
+            document.querySelector('.title').innerHTML = "Player 2 Wins!";
+        } else {
+            document.querySelector('.title').innerHTML = "Draw!";
+        }
+    </script>
+</body>
+</html>
